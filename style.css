@@ -105,6 +105,50 @@ nav{
     color: var(--secondary-color);
 }
 
+.header__container{
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-block: 5rem 2rem;
+    padding-inline: 2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.header__image img{
+    width: 100%;
+    max-width: 500px;
+    margin-inline: auto;
+    display: flex;
+}
+
+.header__content{
+    overflow: hidden;
+    text-align: center;
+}
+
+.header__content h2{
+    position: relative;
+    isolation: isolate;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-align: right;
+
+}
+
+.header__content h2::before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translate(calc(-100% - 1rem), -50%);
+    height: 2px;
+    width: 150%;
+    background-color: var(--white);
+}
 
 @media  (width > 768px){
     nav{
