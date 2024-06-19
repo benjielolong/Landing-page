@@ -150,6 +150,66 @@ nav{
     background-color: var(--white);
 }
 
+.header__content h1{
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 5rem;
+}
+
+.h1__span-1{
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.h1__span-2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.header__content{
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.header__content .btn{
+    padding:  .75rem 1.5rem;
+    outline: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5rem;
+    transition: 0.3rem;
+    cursor: pointer;
+}
+
+.header__content .btn:hover{
+    color: var(--primary-color);
+    background-color: var(--white);
+}
+
+.socials{
+    padding-block: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socials a{
+    font-size: 1.5rem;
+    color: var(--text-light);
+}
+
+.socials a:hover{
+    color: var(--primary-color);
+}
+
+.header__bar{
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
 @media  (width > 768px){
     nav{
         position: static;
@@ -186,4 +246,21 @@ nav{
     .nav__links a:hover{
         color: var(--primary-color);
     }
+}
+
+.header__container{
+    grid-template-columns: repeat(2 1fr);
+    align-items: center;
+}
+
+.header__image{
+    grid-area: 1/2/2/3;
+}
+
+.header__content{
+    text-align: left;
+}
+
+.socials{
+    justify-content: flex-start;
 }
